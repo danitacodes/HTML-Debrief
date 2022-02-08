@@ -8,28 +8,33 @@
     <title>Dog Lovin!</title>
 </head>
 <body>
-    <header id="navbar">
-        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
-            <section class="container">
-                <a class="navbar-brand" href="#">Dog Lovin!</a>
-                <button class="navbar-toggler" type="buttoon" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigaiton">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            <section class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="nav navbar-nav ml-auto">
+    <!--Navbar-->
+    <nav class="navbar">
+        <div class="container-xxl">
+            <a href="#intro" class="navbar-brand">
+                <span class="fw-bold text-secondary">Dog Lovin!</span>
+            </a>
+            <!--Toggle Button-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Nav Links-->
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Labrador Retriever</a>
+                        <a class="nav-link" href="#labrador">Labrador Retriever</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pug</a>
+                        <a class="nav-link" href="#pug">Pug</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Poodle</a>
+                        <a class="nav-link" href="#poodle">Poodle</a>
                     </li>
                 </ul>
-            </section>
-        </nav>
-    </header>
+            </div>
+        </div>
+    </nav>
     <main>
         <article>
             <h2>Labrador Retriever</h2>
