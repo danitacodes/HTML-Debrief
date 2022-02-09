@@ -9,9 +9,9 @@
 </head>
 <body>
     <!--Navbar-->
-    <nav class="navbar">
+    <nav class="navbar navbar-expand-md navbar-light">
         <div class="container-xxl">
-            <a href="#intro" class="navbar-brand">
+            <a href="#sidebar" class="navbar-brand d-block mt-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
                 <span class="fw-bold text-secondary">Dog Lovin!</span>
             </a>
             <!--Toggle Button-->
@@ -35,7 +35,29 @@
             </div>
         </div>
     </nav>
+    <!--Carousel-->
     <main>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/labrador-puppy-royalty-free-image-1626252338.jpg?crop=0.667xw:1.00xh;0.173xw,0&resize=640:*" class="d-block w-100" alt="labrador">
+              </div>
+              <div class="carousel-item">
+                <img src="https://cdn-prd.content.metamorphosis.com/wp-content/uploads/sites/2/2020/01/shutterstock_1268241238-2.jpg" class="d-block w-100" alt="pug">
+              </div>
+              <div class="carousel-item">
+                <img src="https://thehappypuppysite.com/wp-content/uploads/2018/01/Toy-Poodle-HP-long-1024x555.jpg" class="d-block w-100" alt="toy poodle">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         <article>
             <h2>Labrador Retriever</h2>
             <p>British breed of retriever gun dog. It is among the most commonly kept dogs in several countries. They are loyal, obedient, and playful.</p>
@@ -95,6 +117,17 @@
         <h2>&copy 2022</h2>
         <a href="www.https://github.com/danitacodes">Danita Codes</a>
     </footer>
+
+    <!--Off Canvas-->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Aren't dogs great!</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>Please take a look at all the pictures.</p>
+        </div>
+      </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
